@@ -15,7 +15,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/hello", helloHandler)
 
-	port := "8080"
+	port := "8082"
 	log.Printf("Server is running on port %s", port)
 	if err := http.ListenAndServe(":"+port, nil); err != nil {
 		log.Fatal(err)
