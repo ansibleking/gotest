@@ -9,7 +9,7 @@ import (
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
-	fmt.Fprintf(w, "{\"message\": \"Hello, World!\"}")
+	fmt.Fprintf(w, "{\"message\": \"Hello, World! - ocp trigger - 1\"}")
 }
 
 func main() {
